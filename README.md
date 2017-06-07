@@ -1,7 +1,13 @@
-# EmphasisTextView
+* 欢迎关注微信公众号、长期为您推荐优秀博文、开源项目、视频
+
+* 微信公众号名称：Android干货程序员
+
+* ![](http://upload-images.jianshu.io/upload_images/4037105-8f737b5104dd0b5d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 项目总贴:https://github.com/open-android/Android
 
 
-![][img/screenshot.png]
+![][./img/screenshot.png]
 
 ## 使用步骤
 ### 第一步. 在项目的根目录build.gradle添加依赖
@@ -13,6 +19,7 @@ allprojects {
         maven { url "https://jitpack.io" }
     }
 }
+![](http://upload-images.jianshu.io/upload_images/4037105-2faa5daca3bfe8a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ~~~
 
 ### 第二步.  在Module的build.gradle添加依赖
