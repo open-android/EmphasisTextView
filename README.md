@@ -7,7 +7,7 @@
 * 项目总贴:https://github.com/open-android/Android
 
 
-![][./img/screenshot.png]
+![](./img/screenshot.png)
 
 ## 使用步骤
 ### 第一步. 在项目的根目录build.gradle添加依赖
@@ -19,8 +19,9 @@ allprojects {
         maven { url "https://jitpack.io" }
     }
 }
-![](http://upload-images.jianshu.io/upload_images/4037105-2faa5daca3bfe8a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ~~~
+![](http://upload-images.jianshu.io/upload_images/4037105-2faa5daca3bfe8a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 第二步.  在Module的build.gradle添加依赖
 
