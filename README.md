@@ -1,13 +1,18 @@
 # EmphasisTextView
 
 
-![Demo ][img/screenshot.png]
+![][img/screenshot.png]
 
 ## 使用步骤
 ### 第一步. 在项目的根目录build.gradle添加依赖
 
 ~~~
-maven { url 'https://jitpack.io' }
+allprojects {
+    repositories {
+       ......
+        maven { url "https://jitpack.io" }
+    }
+}
 ~~~
 
 ### 第二步.  在Module的build.gradle添加依赖
