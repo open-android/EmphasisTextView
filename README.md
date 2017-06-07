@@ -1,53 +1,101 @@
 # EmphasisTextView
-[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0) [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
-An android TextView that supports highlighting parts or all of the text contained in it.
+
 
 Screenshots           
 ===========
 ![Demo Screenshot][1]
 
-How to
+### 第三步：在XML复制如下代码：
+```
+<com.athkalia.emphasis.EmphasisTextView
+            android:id="@+id/main_activity_first_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textSize="30sp" />
+```
 ======
 
-To set the highlight areas you can add the following statements programmatically:
+### 第四步：拷贝如下代码到activity实现图片第一个效果
 ```java
-emphasisTextView.setText("SALAD");
-emphasisTextView.setTextToHighlight("sa");
-emphasisTextView.setHighlightColor("#ff3393b4"); 
-emphasisTextView.setCaseInsensitive(true);
-emphasisTextView.highlight();
-```
-Please check the sample project for some more working examples.
+private void setUpFirstEmphasisTextView() {
 
-Add it to your project
-----------------------
-
-This library is hosted in [jcenter](https://bintray.com/bintray/jcenter) 
-
-For gradle, you can import it with:
-```groovy
-dependencies {
-    compile 'com.athkalia.emphasis:emphasis:0.4'
+        firstEmphasisTextView.setText("saladSALAD");
+        firstEmphasisTextView.setTextToHighlight("sa");
+        firstEmphasisTextView.setTextHighlightColor("#ff3393b4");
+        firstEmphasisTextView.highlight();
 }
 ```
-For maven, you can import it with: 
-```xml
-<dependency>
-    <groupId>com.athkalia.emphasis</groupId>
-    <artifactId>emphasis</artifactId>
-    <type>aar</type>
-    <version>0.4</version>
-</dependency>
+
+### 拷贝如下代码到activity实现图片第二个效果
+```java
+private void setUpSecondEmphasisTextView() {
+
+        secondEmphasisTextView.setText("saladSALAD");
+        secondEmphasisTextView.setTextToHighlight("sa");
+        secondEmphasisTextView.setTextHighlightColor(android.R.color.black);
+        secondEmphasisTextView.highlight();
+    }
 ```
-Todos
------
-Feel free to open a pull request for anything that you want to see added.
- 
-What I have in mind:
 
+### 拷贝如下代码到activity实现图片第三个效果
+```java
+private void setUpThirdEmphasisTextView() {
 
-1) Introduce a delegate when someone is using another class that is already extending from TextView (possibly another library).
+        thirdEmphasisTextView.setText("saladsalad");
+        thirdEmphasisTextView.setTextToHighlight("sa");
+        thirdEmphasisTextView.setTextHighlightColor("#ffff0000");
+        thirdEmphasisTextView.setCaseInsensitive(true);
+        thirdEmphasisTextView.highlight();
+}
+```
 
-2) Create similar functionality via xml attributes.
-       
- [1]: ./art/screenshot.png
+### 拷贝如下代码到activity实现图片第四个效果
+```java
+private void setUpFourthEmphasisTextView() {
+
+        fourthEmphasisTextView.setText("saladSaladSALAD");
+        fourthEmphasisTextView.setTextToHighlight("SA");
+        fourthEmphasisTextView.setTextHighlightColor("#ff00ff00");
+        fourthEmphasisTextView.setCaseInsensitive(true);
+        fourthEmphasisTextView.highlight();
+    }
+```
+
+### 拷贝如下代码到activity实现图片第五个效果
+```java
+private void setUpFifthEmphasisTextView() {
+
+        fifthEmphasisTextView.setText("+301111111111");
+        fifthEmphasisTextView.setTextToHighlight("+");
+        fifthEmphasisTextView.setTextHighlightColor("#ff00ffff");
+        fifthEmphasisTextView.highlight();
+    }
+```
+
+### 拷贝如下代码到activity实现图片第六个效果
+```java
+ private void setUpSixthEmphasisTextView() {
+
+        sixthEmphasisTextView.setText("pizzazzZ");
+        sixthEmphasisTextView.setTextToHighlight("z");
+        sixthEmphasisTextView.setTextHighlightColor(android.R.color.holo_green_light);
+        sixthEmphasisTextView.setCaseInsensitive(false);
+        sixthEmphasisTextView.setHighlightMode(HighlightMode.TEXT);
+        sixthEmphasisTextView.highlight();
+ }
+```
+
+### 拷贝如下代码到activity实现图片第七个效果
+```java
+ private void setUpSeventhEmphasisTextView() {
+
+        seventhEmphasisTextView.setText("SaldZongLALALA");
+        seventhEmphasisTextView.setTextToHighlight("A");
+        seventhEmphasisTextView.setHighlightMode(HighlightMode.TEXT);
+        seventhEmphasisTextView.setTextHighlightColor(android.R.color.holo_red_dark);
+        seventhEmphasisTextView.highlight();
+ }
+```
