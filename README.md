@@ -1,9 +1,20 @@
 # EmphasisTextView
 
 
-Screenshots           
-===========
-![Demo Screenshot][1]
+![Demo ][img/screenshot.png]
+
+## 使用步骤
+### 第一步. 在项目的根目录build.gradle添加依赖
+
+~~~
+maven { url 'https://jitpack.io' }
+~~~
+
+### 第二步.  在Module的build.gradle添加依赖
+
+~~~
+compile 'com.github.open-android:EmphasisTextView:0.1.0'
+~~~
 
 ### 第三步：在XML复制如下代码：
 ```
